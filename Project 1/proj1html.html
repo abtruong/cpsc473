@@ -1,4 +1,5 @@
-<!DOCTYPE html> <!-- Required -->
+<!DOCTYPE html>
+<!-- Required -->
 <!--
     NAME:   Alexander Truong
     CWID:   889164513
@@ -8,448 +9,452 @@
 -->
 
 <!--Define the metadata, .css link, and the title of the tab-->
+
 <head>
-    <meta charset='UTF-8'/>
-    <link rel="stylesheet" type="text/css" href="proj1css.css">
-    <title>The New York Times</title>
+  <meta charset='UTF-8' />
+  <link rel="stylesheet" type="text/css" href="proj1css.css">
+  <title>The New York Times</title>
 </head>
 
 <body>
-    <!--Black header with special rates using div (section), a (hyperlink), and b (bold) elements-->
-    <div class="headercenter">
-        <a href="https://www.nytimes.com/subscription/edu/lp8LQFK.html?campaignId=6Y4R8&campaignId=6Y4R8">
-            <b>Take The Times to school with special rates.</b>
-        </a>
-    </div>
+  <!--Black header with special rates using div (section), a (hyperlink), and b (bold) elements-->
+  <div class="headercenter">
+    <a href="https://www.nytimes.com/subscription/edu/lp8LQFK.html?campaignId=6Y4R8&campaignId=6Y4R8">
+      <b>Take The Times to school with special rates.</b>
+    </a>
+  </div>
 
-    <!--White navigation bar for the NYT logo and links using div (section), img (image), a (hyperlink), b (bold), and span (color styling) elements -->
-    <div class="topnavbar">
-        <div><a href="https://www.nytimes.com/">
-            <img style="margin-top: -10px;" src="nyt_logo.png"> <!-- Inline style to set a separate margin for 1 item in flexbox -->
-        </a></div>
-        <div><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp8FW9H.html?campaignId=6Y4R8">
-            Why The Times?
-        </a></div>
-        <div><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp3L3W6.html?campaignId=6Y4R8">
-            What You Get
-        </a></div>
-        <div><a href="https://www.nytimes.com/subscription/multiproduct/lp8HYKU.html?campaignId=6Y4R8">
-            <b>Pricing</b>
-        </a></div>
-        <div>
-            More Options
-        </div>
-        <div><a style="font-family:Arial, Helvetica, sans-serif;" href="https://myaccount.nytimes.com/auth/login?URI=https%3A%2F%2Fwww.nytimes.com%2F">
-            <span style="font-size: 12px;"><b>LOG IN</b></span>
-        </a></div>
-    </div>
-
-    <!-- Red banner showing the special rates using div, p (paragraph), br (line break), and b elements -->
-    <div class="redbanner">
-        <p id="whitetext">
-            <b>Make a difference in today's world.
-                <br/>
-            Support independent journalism.</b>
-        </p>
-        <p id="yellowtext"><b>Subscribe for $1 a week.</b></p>
-        <p id="endtext">Ends today.</p>
-    </div>
-
-    <!-- Simple line stating choices -->
-    <p id="info">Choose between our <b>Digital</b> or <b>Home Delivery</b> options. You may cancel anytime.</p>
-
-    <!-- Define all subscription box options with their respective colors (light blue, dark blue, and grey) -->
-    <div class="flexsubtype">
-        <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000139620&campaignId=6Y4R8#signup" style="text-decoration:none;">
-            <div class="flexitems basic">
-                <p>
-                    <span style="font-size:20px;">Basic</span>
-                        <br/>
-                        <br/>
-                    <span style="color:#bbbbbb;"><s>$3.75</s></span> $1.00/week <!-- Custom color; no need for CSS to customize 1 line of color -->
-                        <br/>
-                    <span style="font-size:10.5px;">for one year</span> <!-- No CSS needed for sizing the font of 1 line -->
-                </p>
-                <div id="getbasic">
-                    <p style="color:#ffffff;">GET BASIC</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000103640&campaignId=6Y4R8#signup" style="text-decoration:none;">
-            <div class="flexitems allaccess">
-                <p>
-                    <span style="font-size:20px;">All Access</span>
-                        <br/>
-                        <br/>
-                    <span style="color:#bbbbbb;"><s>$6.25</s></span> $3.13/week <!-- Custom color; no need for CSS to customize 1 line of color -->
-                        <br/>
-                    <span style="font-size:10.5px;">for one year</span> <!-- No CSS needed for sizing the font of 1 line -->
-                </p>
-                <div id="getaccess">
-                    <p style="color:#ffffff;">GET ALL ACCESS</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://www.nytimes.com/subscription/hd/361.html?campaignId=6Y4R8" style="text-decoration:none;">
-            <div class="flexitems premium">
-                <p>
-                    <span style="font-size:20px;">All Access + Print</span>
-                        <br/>
-                        <br/>
-                    As low as <span style="color:#bbbbbb;"><s>$7.25</s></span> $3.63/week <!-- Custom color; no need for CSS to customize 1 line of color -->
-                        <br/>
-                    <span style="font-size:10.5px;">for one year</span> <!-- No CSS needed for sizing the font of 1 line -->
-                </p>
-                <div id="getpremium">
-                    <p style="color:#ffffff;">GET ALL ACCESS + PRINT</p>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <!-- Define all options to each subscription offer, listing all perks for their respective subscription types -->
-    <div class="flexsubperks">
-        <ul class="subperksinfoleftmid">
-            <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000139620&campaignId=6Y4R8#signup">
-                <li>
-                    Unlimited article access anytime, anywhere on NYTimes.com and in the app.
-                </li>
-                <li>
-                    <b>Subscriber Exclusives</b>
-                        <br/>
-                    Get access to exclusive features and correspondence, like our Notes From the Newsroom
-                    newsletter, along with early access to new media releases.
-                </li>
-            </a>
-        </ul>
-        <ul class="subperksinfoleftmid">
-            <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000103640&campaignId=6Y4R8#signup">
-                <li>
-                    Unlimited article access anytime, anywhere on NYTimes.com and in the app.
-                </li>
-                <li>
-                    <b>Subscriber Exclusives</b>
-                        <br/>
-                    Get access to exclusive features and correspondence, like our Notes From the Newsroom
-                    newsletter, along with early access to new media releases.
-                </li>
-                <li>
-                    <b>NYT Crossword</b>
-                        <br/>
-                    Play the puzzle for free on any device. Enjoy 20 years of Crossword archives. Solve in
-                    minutes with our bite-size mini puzzles.
-                </li>
-                <li>
-                    <b>NYT Cooking</b>
-                        <br/>
-                    Access to the entire NYT Cooking recipe archive. Learn with our how-to cooking guides,
-                    and build and organize your personal Recipe Box.
-                </li>
-                <li>
-                    <b>1 Extra Subscription </b>
-                    <span style="font-family:Calibri; padding:2px; background-color:#ff0000; color:#ffffff; border-radius:2px;">
-                        <b>BONUS</b>
-                    </span>
-                        <br/>
-                    One complimentary All Access subscription to give to anyone you'd like (a $25/month value).
-                </li>
-            </a>
-        </ul>
-        <ul class="subperksinforight">
-            <a href="https://www.nytimes.com/subscription/hd/361.html?campaignId=6Y4R8">
-                <li>
-                    Unlimited article access anytime, anywhere on NYTimes.com and in the app.
-                </li>
-                <li>
-                    <b>Subscriber Exclusives</b>
-                        <br/>
-                    Get access to exclusive features and correspondence, like our Notes From the Newsroom
-                    newsletter, along with early access to new media releases.
-                </li>
-                <li>
-                    <b>NYT Crossword</b>
-                        <br/>
-                    Play the puzzle for free on any device. Enjoy 20 years of Crossword archives. Solve in
-                    minutes with our bite-size mini puzzles.
-                </li>
-                <li>
-                    <b>NYT Cooking</b>
-                        <br/>
-                    Access to the entire NYT Cooking recipe archive. Learn with our how-to cooking guides,
-                    and build and organize your personal Recipe Box.
-                </li>
-                <li>
-                    <b>2 Extra Subscriptions </b>
-                    <span style="font-family:Calibri; padding:2px; background-color:#ff0000; color:#ffffff; border-radius:2px;">
-                        <b>BONUS</b>
-                    </span>
-                        <br/>
-                    Two complimentary All Access subscription to give to anyone you'd like (a $50/month value).
-                </li>
-                <li>
-                    <b>Home Delivery</b>
-                        <br/>
-                    Customized delivery options such as Sunday only, Fri.-Sun., weekday delivery or daily
-                    delivery. Available in most major markets across the United States.
-                </li>
-                <li>
-                    <b>Times Experiences</b>
-                        <br/>
-                    Engage directly with journalists online, go beyond the year's biggest stories with panel
-                    discussions across the country, and enjoy special discounts and behind-the-scenes access
-                    to cultural events.
-                </li>
-                <li>
-                    <b>Exclusive Print Editions</b>
-                        <br/>
-                    Receive special print-only features like The New York Times For Kids, sections dedicated to
-                    crosswords and puzzles, and panoramic photojournalism stories.
-                </li>
-                <li style="font-size:10px; color:#999999; padding-top: 10px;">
-                    Price based on Sunday delivery in the New York metropolitan area, and varies according to
-                    location and frequency. Subscribers receive free All Access Digital with a Home Delivery Subscription.
-                </li>
-            </a>
-        </ul>
-    </div>
-
-    <!-- Disclaimer information on all subscriptions -->
-    <div class="flexsubtype">
-        <p class="commitment">
-            <b>No commitment required, cancel anytime.</b>
-                <br/>
-            Offer expires 10/1/18, 10 a.m. E.T. Your payment method will automatically be charged in advance every 4 weeks
-            (28 days). As indicated above in each offer, you will be charged the introductory offer rate for the introductory
-            period, and thereafter will be charged the standard rate until you cancel. All subscriptions renew automatically.
-            You can <u>cancel</u> anytime. These offers are not available for current subscribers. Other restrictions and
-            taxes may apply. Offers and pricing are subject to change without notice.
-        </p>
-    </div>
-    
-    <!-- More subscription options heading using p element -->
-    <div class="flexsubtype">
-        <p class="moresubopts">
-            More Subscription Options
-        </p>
-    </div>
-    
-    <!-- Two different additional subscription offers all encased in a light-grey background with p and a elements text inside -->
-    <div class="flexsubopts">
-        <a style="text-decoration: none;" href="https://www.nytimes.com/subscription/edu/lp8LQFS.html?campaignId=6Y4R8">
-            <p class="subopts">
-                <span style="color:#000000;">
-                    <b>Special Academic Rates</b>
-                        <br/>
-                    Students and educators, subscribe to The New York Times today and save up to 70% on unlimited access to NYTimes.com.
-                        <br/>
-                        <br/>
-                        <br/>
-                    <span style="color: #4488ff;">
-                        <b><u>Go to Academic Rates</u></b>
-                    </span>
-                </span>
-            </p>
-        </a>
-        <a style="text-decoration: none;" href="https://www.nytimes.com/subscription/games/lp898NC.html?referrer=https://www.nytimes.com/subscription/edu/lp8LQFS.html?campaignId=6Y4R8&campaignId=6Q9K8">
-            <p class="subopts">
-                <span style="color:#000000;">
-                    <b>NYT Crossword</b>
-                        <br>
-                    Play the Crossword and mini puzzles on any device. Daily puzzles edited by Will Shortz, plus 20 years of great
-                    puzzles from our archives.
-                        <br/>
-                        <br/>
-                        <br/>
-                    <span style="color: #4488ff;">
-                        <b><u>Get NYT Crossword</u></b>
-                    </span>
-                </span>
-            </p>
-        </a>
-    </div>
-
-    <!-- Two more different additional subscription offers all encased in a light-grey background with p and a elements text inside -->
-    <div class="flexsubopts">
-        <a style="text-decoration: none;" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?campaignId=6WKYY">
-            <p class="subopts">
-                <span style="color:#000000;">
-                    <b>NYT Cooking</b>
-                        <br/>
-                    Unlimited access to the entire NYT Cooking recipe database, with tools to save and organize your favorites in your
-                    personal Recipe Box.
-                        <br/>
-                        <br/>
-                        <br/>
-                    <span style="color: #4488ff;">
-                        <b><u>Get NYT Cooking</u></b>
-                    </span>    
-                </span>
-            </p>
-        </a>
-        <a style="text-decoration: none;" href="https://www.nytimes.com/subscriptions/edu/lp84U9K.html?campaignId=3LF9Q">
-            <p class="subopts">
-                <span style="color:#000000;">
-                    <b>Gift Subscriptions</b>
-                        <br/>
-                    Give the gift of unlimited access to NYTimes.com and the NYT app and save up to 50% on your gift subscription.
-                        <br/>
-                        <br/>
-                        <br/>
-                    <span style="color: #4488ff;">
-                        <b><u>Get NYT Cooking</u></b>
-                    </span>    
-                </span>
-            </p>
-        </a>
-    </div>
-
-    <!-- One more different additional subscription offer encased in a light-grey background and another empty white box to fill the void in the flexbox -->
-    <div class="flexsubopts">
-        <a style="text-decoration: none;" href="http://nytimesgroupsubscriptions.com/?Pardot_Campaign_Code_Form_Input=6XUJJ&campaignId=6XUJJ">
-            <p class="subopts">
-                <span style="color:#000000;">
-                    <b>Group Subscriptions</b>
-                        <br/>
-                    Get Unlimited NYTimes.com access for organizations, at special group rates.
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                    <span style="color: #4488ff;">
-                        <b><u>Go to Group Subscriptions</u></b>
-                    </span>    
-                </span>
-            </p>
-        </a>
-        <p class="emptyopt"></p>
-    </div>
-
-    <!-- FAQ header using p -->
-    <div class="flexsubtype">
-        <p class="moresubopts">
-            Frequently Asked Questions
-        </p>
-    </div>
-
-    <!-- List of frequently asked questions -- there is currently no implementation on expanding/collapsing any of these, only hard-coded info -->
+  <!--White navigation bar for the NYT logo and links using div (section), img (image), a (hyperlink), b (bold), and span (color styling) elements -->
+  <div class="topnavbar">
+    <div><a href="https://www.nytimes.com/">
+        <img style="margin-top: -10px;" src="nyt_logo.png"> <!-- Inline style to set a separate margin for 1 item in flexbox -->
+      </a></div>
+    <div><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp8FW9H.html?campaignId=6Y4R8">
+        Why The Times?
+      </a></div>
+    <div><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp3L3W6.html?campaignId=6Y4R8">
+        What You Get
+      </a></div>
+    <div><a href="https://www.nytimes.com/subscription/multiproduct/lp8HYKU.html?campaignId=6Y4R8">
+        <b>Pricing</b>
+      </a></div>
     <div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>&nbsp;- &emsp; What is a home delivery subscription? What do I get when I subscribe?</b>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqoptsexpanded">
-                As a home delivery subscriber to The New York Times you enjoy the convenience and reliability of having the printed
-                newspaper delivered to you first thing in the morning. Your subscription includes free Digital Access, which brings you 
-                unlimited access to NYTimes.com and full access to the NYT app for smartphones and tables. You can also share 
-                your Digital Access with a family member at no additional charge.
-                    <br/>
-                    <br/>
-                Home delivery subscribers also have free access to The New York Times Archive, featuring every article published
-                since 1851; Times Digest, a 10-page summary of the top stories of The Times, emailed daily; and The New York Times 
-                Replica Edition, an exact digital replica of the printed paper that you can read online or offline — even when you are 
-                not connected to the internet. We also make it easy for you to suspend home delivery service while you're away on 
-                vacation.
-                    <br/>
-                    <br/>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>+ &emsp; What is a digital subscription? What do I get when I subscribe?</b>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>+ &emsp; Can I get a subscription to NYTimes.com only?</b>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>+ &emsp; I get home delivery of the newspaper. Do I get free access?</b>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>+ &emsp; Do you offer subscriptions to organizations?</b>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>+ &emsp; Can I give a gift subscription to The Times?</b>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>+ &emsp; What is the cancellation and refund policy?</b>
-            </p>
-        </div>
-        <div class="flexsubtype">
-            <p class="faqopts">
-                <b>+ &emsp; What if I dont want to subscribe — can I still read NYTimes.com for free?</b>
-            </p>
-        </div>
+      More Options
     </div>
+    <div><a style="font-family:Arial, Helvetica, sans-serif;" href="https://myaccount.nytimes.com/auth/login?URI=https%3A%2F%2Fwww.nytimes.com%2F">
+        <span style="font-size: 12px;"><b>LOG IN</b></span>
+      </a></div>
+  </div>
 
-    <!-- Unimplemented view all FAQ button that currently does not expand all FAQ list items -->
-    <div class="flexsubtype">
-        <p class="viewallfaqs">
-            VIEW ALL FAQ
+  <!-- Red banner showing the special rates using div, p (paragraph), br (line break), and b elements -->
+  <div class="redbanner">
+    <p id="whitetext">
+      <b>Make a difference in today's world.
+        <br />
+        Support independent journalism.</b>
+    </p>
+    <p id="yellowtext"><b>Subscribe for $1 a week.</b></p>
+    <p id="endtext">Ends today.</p>
+  </div>
+
+  <!-- Simple line stating choices -->
+  <p id="info">Choose between our <b>Digital</b> or <b>Home Delivery</b> options. You may cancel anytime.</p>
+
+  <!-- Define all subscription box options with their respective colors (light blue, dark blue, and grey) -->
+  <div class="flexsubtype">
+    <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000139620&campaignId=6Y4R8#signup" style="text-decoration:none;">
+      <div class="flexitems basic">
+        <p>
+          <span style="font-size:20px;">Basic</span>
+          <br />
+          <br />
+          <span style="color:#bbbbbb;"><s>$3.75</s></span> $1.00/week
+          <!-- Custom color; no need for CSS to customize 1 line of color -->
+          <br />
+          <span style="font-size:10.5px;">for one year</span> <!-- No CSS needed for sizing the font of 1 line -->
         </p>
-    </div>
+        <div id="getbasic">
+          <p style="color:#ffffff;">GET BASIC</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000103640&campaignId=6Y4R8#signup" style="text-decoration:none;">
+      <div class="flexitems allaccess">
+        <p>
+          <span style="font-size:20px;">All Access</span>
+          <br />
+          <br />
+          <span style="color:#bbbbbb;"><s>$6.25</s></span> $3.13/week
+          <!-- Custom color; no need for CSS to customize 1 line of color -->
+          <br />
+          <span style="font-size:10.5px;">for one year</span> <!-- No CSS needed for sizing the font of 1 line -->
+        </p>
+        <div id="getaccess">
+          <p style="color:#ffffff;">GET ALL ACCESS</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.nytimes.com/subscription/hd/361.html?campaignId=6Y4R8" style="text-decoration:none;">
+      <div class="flexitems premium">
+        <p>
+          <span style="font-size:20px;">All Access + Print</span>
+          <br />
+          <br />
+          As low as <span style="color:#bbbbbb;"><s>$7.25</s></span> $3.63/week
+          <!-- Custom color; no need for CSS to customize 1 line of color -->
+          <br />
+          <span style="font-size:10.5px;">for one year</span> <!-- No CSS needed for sizing the font of 1 line -->
+        </p>
+        <div id="getpremium">
+          <p style="color:#ffffff;">GET ALL ACCESS + PRINT</p>
+        </div>
+      </div>
+    </a>
+  </div>
 
-    <!-- Footer for the website, listing website information, copyright, and other additional features for the website -->
-    <div class="flexfooter">
-        <ul class="footerbanner">
-            <li><a href="https://www.nytimes.com/">
-                <img src="nyt_logo_footer.png">
-            </a></li>
-            <li>
-                <img src="copyright.png">
-            </li>
-        </ul>
-        <ul class="footerbanner">
-            <li><b>About</b></li>
-            <li><a href="https://www.nytco.com/" style="text-decoration:none;">
-                The New York Times Company
-            </a></li>
-            <li><a href="https://help.nytimes.com/hc/en-us/articles/115014892108-Privacy-policy" style="text-decoration:none;">
-                Privacy Policy
-            </a></li>
-            <li><a href="https://help.nytimes.com/hc/en-us/articles/115014893968-Terms-of-sale" style="text-decoration:none;">
-                Terms of Sale
-            </a></li>
-        </ul>
-        <ul class="footerbanner">
-            <li><b>Help</b></li>
-            <li><a href="https://help.nytimes.com/hc/en-us/articles/115015852367-Digital-subscriptions" style="text-decoration: none;">
-                Frequently Asked Questions
-            </a></li>
-            <li><a href="https://help.nytimes.com/hc/en-us" style="text-decoration:none;">
-                Contact Us
-            </a></li>
-            <li><a href="https://help.nytimes.com/hc/en-us/articles/115015385887-Contact-Us?redir=myacc" style="text-decoration:none;">
-                Feedback
-            </a></li>
-        </ul>
-        <ul class="footerbanner">
-            <li><b>Ways to Subscribe</b></li>
-            <li><a href="https://www.nytimes.com/subscription/multiproduct/lp8HYKU.html?campaignId=6JUHR" style="text-decoration:none;">
-                Digital + Home Delivery
-            </a></li>
-            <li><a href="https://www.nytimes.com/subscription/edu/lp8LQFK.html?campaignId=6RR8R&campaignId=6RR8R" style="text-decoration:none;">
-                Education Rates
-            </a></li>
-            <li><a href="http://nytimesgroupsubscriptions.com/?Pardot_Campaign_Code_Form_Input=6XUJR" style="text-decoration:none;">
-                Group Subscriptions
-            </a></li>
-            <li><a href="https://www.nytimes.com/subscription/games/lp898NC.html?referrer=https://www.nytimes.com/subscription/edu/lp8LQFS.html?campaignId=6Y4R8&campaignId=6RRWR" style="text-decoration:none;">
-                NYT Crossword
-            </a></li>
-            <li><a href="https://www.nytimes.com/subscription/multiproduct/lp8R34X.html?campaignId=3FQ4Y" style="text-decoration:none;">
-                Gift Subscriptions
-            </a></li>
-        </ul>
+  <!-- Define all options to each subscription offer, listing all perks for their respective subscription types -->
+  <div class="flexsubperks">
+    <ul class="subperksinfoleftmid">
+      <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000139620&campaignId=6Y4R8#signup">
+        <li>
+          Unlimited article access anytime, anywhere on NYTimes.com and in the app.
+        </li>
+        <li>
+          <b>Subscriber Exclusives</b>
+          <br />
+          Get access to exclusive features and correspondence, like our Notes From the Newsroom
+          newsletter, along with early access to new media releases.
+        </li>
+      </a>
+    </ul>
+    <ul class="subperksinfoleftmid">
+      <a href="https://myaccount.nytimes.com/get-started/auth?OC=20000103640&campaignId=6Y4R8#signup">
+        <li>
+          Unlimited article access anytime, anywhere on NYTimes.com and in the app.
+        </li>
+        <li>
+          <b>Subscriber Exclusives</b>
+          <br />
+          Get access to exclusive features and correspondence, like our Notes From the Newsroom
+          newsletter, along with early access to new media releases.
+        </li>
+        <li>
+          <b>NYT Crossword</b>
+          <br />
+          Play the puzzle for free on any device. Enjoy 20 years of Crossword archives. Solve in
+          minutes with our bite-size mini puzzles.
+        </li>
+        <li>
+          <b>NYT Cooking</b>
+          <br />
+          Access to the entire NYT Cooking recipe archive. Learn with our how-to cooking guides,
+          and build and organize your personal Recipe Box.
+        </li>
+        <li>
+          <b>1 Extra Subscription </b>
+          <span style="font-family:Calibri; padding:2px; background-color:#ff0000; color:#ffffff; border-radius:2px;">
+            <b>BONUS</b>
+          </span>
+          <br />
+          One complimentary All Access subscription to give to anyone you'd like (a $25/month value).
+        </li>
+      </a>
+    </ul>
+    <ul class="subperksinforight">
+      <a href="https://www.nytimes.com/subscription/hd/361.html?campaignId=6Y4R8">
+        <li>
+          Unlimited article access anytime, anywhere on NYTimes.com and in the app.
+        </li>
+        <li>
+          <b>Subscriber Exclusives</b>
+          <br />
+          Get access to exclusive features and correspondence, like our Notes From the Newsroom
+          newsletter, along with early access to new media releases.
+        </li>
+        <li>
+          <b>NYT Crossword</b>
+          <br />
+          Play the puzzle for free on any device. Enjoy 20 years of Crossword archives. Solve in
+          minutes with our bite-size mini puzzles.
+        </li>
+        <li>
+          <b>NYT Cooking</b>
+          <br />
+          Access to the entire NYT Cooking recipe archive. Learn with our how-to cooking guides,
+          and build and organize your personal Recipe Box.
+        </li>
+        <li>
+          <b>2 Extra Subscriptions </b>
+          <span style="font-family:Calibri; padding:2px; background-color:#ff0000; color:#ffffff; border-radius:2px;">
+            <b>BONUS</b>
+          </span>
+          <br />
+          Two complimentary All Access subscription to give to anyone you'd like (a $50/month value).
+        </li>
+        <li>
+          <b>Home Delivery</b>
+          <br />
+          Customized delivery options such as Sunday only, Fri.-Sun., weekday delivery or daily
+          delivery. Available in most major markets across the United States.
+        </li>
+        <li>
+          <b>Times Experiences</b>
+          <br />
+          Engage directly with journalists online, go beyond the year's biggest stories with panel
+          discussions across the country, and enjoy special discounts and behind-the-scenes access
+          to cultural events.
+        </li>
+        <li>
+          <b>Exclusive Print Editions</b>
+          <br />
+          Receive special print-only features like The New York Times For Kids, sections dedicated to
+          crosswords and puzzles, and panoramic photojournalism stories.
+        </li>
+        <li style="font-size:10px; color:#999999; padding-top: 10px;">
+          Price based on Sunday delivery in the New York metropolitan area, and varies according to
+          location and frequency. Subscribers receive free All Access Digital with a Home Delivery Subscription.
+        </li>
+      </a>
+    </ul>
+  </div>
+
+  <!-- Disclaimer information on all subscriptions -->
+  <div class="flexsubtype">
+    <p class="commitment">
+      <b>No commitment required, cancel anytime.</b>
+      <br />
+      Offer expires 10/1/18, 10 a.m. E.T. Your payment method will automatically be charged in advance every 4 weeks
+      (28 days). As indicated above in each offer, you will be charged the introductory offer rate for the introductory
+      period, and thereafter will be charged the standard rate until you cancel. All subscriptions renew automatically.
+      You can <u>cancel</u> anytime. These offers are not available for current subscribers. Other restrictions and
+      taxes may apply. Offers and pricing are subject to change without notice.
+    </p>
+  </div>
+
+  <!-- More subscription options heading using p element -->
+  <div class="flexsubtype">
+    <p class="moresubopts">
+      More Subscription Options
+    </p>
+  </div>
+
+  <!-- Two different additional subscription offers all encased in a light-grey background with p and a elements text inside -->
+  <div class="flexsubopts">
+    <a style="text-decoration: none;" href="https://www.nytimes.com/subscription/edu/lp8LQFS.html?campaignId=6Y4R8">
+      <p class="subopts">
+        <span style="color:#000000;">
+          <b>Special Academic Rates</b>
+          <br />
+          Students and educators, subscribe to The New York Times today and save up to 70% on unlimited access to NYTimes.com.
+          <br />
+          <br />
+          <br />
+          <span style="color: #4488ff;">
+            <b><u>Go to Academic Rates</u></b>
+          </span>
+        </span>
+      </p>
+    </a>
+    <a style="text-decoration: none;" href="https://www.nytimes.com/subscription/games/lp898NC.html?referrer=https://www.nytimes.com/subscription/edu/lp8LQFS.html?campaignId=6Y4R8&campaignId=6Q9K8">
+      <p class="subopts">
+        <span style="color:#000000;">
+          <b>NYT Crossword</b>
+          <br>
+          Play the Crossword and mini puzzles on any device. Daily puzzles edited by Will Shortz, plus 20 years of great
+          puzzles from our archives.
+          <br />
+          <br />
+          <br />
+          <span style="color: #4488ff;">
+            <b><u>Get NYT Crossword</u></b>
+          </span>
+        </span>
+      </p>
+    </a>
+  </div>
+
+  <!-- Two more different additional subscription offers all encased in a light-grey background with p and a elements text inside -->
+  <div class="flexsubopts">
+    <a style="text-decoration: none;" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?campaignId=6WKYY">
+      <p class="subopts">
+        <span style="color:#000000;">
+          <b>NYT Cooking</b>
+          <br />
+          Unlimited access to the entire NYT Cooking recipe database, with tools to save and organize your favorites in your
+          personal Recipe Box.
+          <br />
+          <br />
+          <br />
+          <span style="color: #4488ff;">
+            <b><u>Get NYT Cooking</u></b>
+          </span>
+        </span>
+      </p>
+    </a>
+    <a style="text-decoration: none;" href="https://www.nytimes.com/subscriptions/edu/lp84U9K.html?campaignId=3LF9Q">
+      <p class="subopts">
+        <span style="color:#000000;">
+          <b>Gift Subscriptions</b>
+          <br />
+          Give the gift of unlimited access to NYTimes.com and the NYT app and save up to 50% on your gift subscription.
+          <br />
+          <br />
+          <br />
+          <span style="color: #4488ff;">
+            <b><u>Get NYT Cooking</u></b>
+          </span>
+        </span>
+      </p>
+    </a>
+  </div>
+
+  <!-- One more different additional subscription offer encased in a light-grey background and another empty white box to fill the void in the flexbox -->
+  <div class="flexsubopts">
+    <a style="text-decoration: none;" href="http://nytimesgroupsubscriptions.com/?Pardot_Campaign_Code_Form_Input=6XUJJ&campaignId=6XUJJ">
+      <p class="subopts">
+        <span style="color:#000000;">
+          <b>Group Subscriptions</b>
+          <br />
+          Get Unlimited NYTimes.com access for organizations, at special group rates.
+          <br />
+          <br />
+          <br />
+          <br />
+          <span style="color: #4488ff;">
+            <b><u>Go to Group Subscriptions</u></b>
+          </span>
+        </span>
+      </p>
+    </a>
+    <p class="emptyopt"></p>
+  </div>
+
+  <!-- FAQ header using p -->
+  <div class="flexsubtype">
+    <p class="moresubopts">
+      Frequently Asked Questions
+    </p>
+  </div>
+
+  <!-- List of frequently asked questions -- there is currently no implementation on expanding/collapsing any of these, only hard-coded info -->
+  <div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>&nbsp;- &emsp; What is a home delivery subscription? What do I get when I subscribe?</b>
+      </p>
     </div>
+    <div class="flexsubtype">
+      <p class="faqoptsexpanded">
+        As a home delivery subscriber to The New York Times you enjoy the convenience and reliability of having the printed
+        newspaper delivered to you first thing in the morning. Your subscription includes free Digital Access, which brings you
+        unlimited access to NYTimes.com and full access to the NYT app for smartphones and tables. You can also share
+        your Digital Access with a family member at no additional charge.
+        <br />
+        <br />
+        Home delivery subscribers also have free access to The New York Times Archive, featuring every article published
+        since 1851; Times Digest, a 10-page summary of the top stories of The Times, emailed daily; and The New York Times
+        Replica Edition, an exact digital replica of the printed paper that you can read online or offline — even when you are
+        not connected to the internet. We also make it easy for you to suspend home delivery service while you're away on
+        vacation.
+        <br />
+        <br />
+      </p>
+    </div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>+ &emsp; What is a digital subscription? What do I get when I subscribe?</b>
+      </p>
+    </div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>+ &emsp; Can I get a subscription to NYTimes.com only?</b>
+      </p>
+    </div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>+ &emsp; I get home delivery of the newspaper. Do I get free access?</b>
+      </p>
+    </div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>+ &emsp; Do you offer subscriptions to organizations?</b>
+      </p>
+    </div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>+ &emsp; Can I give a gift subscription to The Times?</b>
+      </p>
+    </div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>+ &emsp; What is the cancellation and refund policy?</b>
+      </p>
+    </div>
+    <div class="flexsubtype">
+      <p class="faqopts">
+        <b>+ &emsp; What if I dont want to subscribe — can I still read NYTimes.com for free?</b>
+      </p>
+    </div>
+  </div>
+
+  <!-- Unimplemented view all FAQ button that currently does not expand all FAQ list items -->
+  <div class="flexsubtype">
+    <p class="viewallfaqs">
+      VIEW ALL FAQ
+    </p>
+  </div>
+
+  <!-- Footer for the website, listing website information, copyright, and other additional features for the website -->
+  <div class="flexfooter">
+    <ul class="footerbanner">
+      <li><a href="https://www.nytimes.com/">
+          <img src="nyt_logo_footer.png">
+        </a></li>
+      <li>
+        <img src="copyright.png">
+      </li>
+    </ul>
+    <ul class="footerbanner">
+      <li><b>About</b></li>
+      <li><a href="https://www.nytco.com/" style="text-decoration:none;">
+          The New York Times Company
+        </a></li>
+      <li><a href="https://help.nytimes.com/hc/en-us/articles/115014892108-Privacy-policy" style="text-decoration:none;">
+          Privacy Policy
+        </a></li>
+      <li><a href="https://help.nytimes.com/hc/en-us/articles/115014893968-Terms-of-sale" style="text-decoration:none;">
+          Terms of Sale
+        </a></li>
+    </ul>
+    <ul class="footerbanner">
+      <li><b>Help</b></li>
+      <li><a href="https://help.nytimes.com/hc/en-us/articles/115015852367-Digital-subscriptions" style="text-decoration: none;">
+          Frequently Asked Questions
+        </a></li>
+      <li><a href="https://help.nytimes.com/hc/en-us" style="text-decoration:none;">
+          Contact Us
+        </a></li>
+      <li><a href="https://help.nytimes.com/hc/en-us/articles/115015385887-Contact-Us?redir=myacc" style="text-decoration:none;">
+          Feedback
+        </a></li>
+    </ul>
+    <ul class="footerbanner">
+      <li><b>Ways to Subscribe</b></li>
+      <li><a href="https://www.nytimes.com/subscription/multiproduct/lp8HYKU.html?campaignId=6JUHR" style="text-decoration:none;">
+          Digital + Home Delivery
+        </a></li>
+      <li><a href="https://www.nytimes.com/subscription/edu/lp8LQFK.html?campaignId=6RR8R&campaignId=6RR8R" style="text-decoration:none;">
+          Education Rates
+        </a></li>
+      <li><a href="http://nytimesgroupsubscriptions.com/?Pardot_Campaign_Code_Form_Input=6XUJR" style="text-decoration:none;">
+          Group Subscriptions
+        </a></li>
+      <li><a href="https://www.nytimes.com/subscription/games/lp898NC.html?referrer=https://www.nytimes.com/subscription/edu/lp8LQFS.html?campaignId=6Y4R8&campaignId=6RRWR" style="text-decoration:none;">
+          NYT Crossword
+        </a></li>
+      <li><a href="https://www.nytimes.com/subscription/multiproduct/lp8R34X.html?campaignId=3FQ4Y" style="text-decoration:none;">
+          Gift Subscriptions
+        </a></li>
+    </ul>
+  </div>
 </body>

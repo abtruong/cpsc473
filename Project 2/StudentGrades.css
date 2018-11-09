@@ -1,0 +1,46 @@
+tr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input {
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
+strong {
+    margin-left: 40px;
+}
+
+.formTable {
+    table-layout: fixed;
+    border: 1px solid #000000;
+    padding: 20px;
+    width: 700px;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+.formTable td {
+    margin-left: 10px;
+    border: 1px solid #000000;
+    padding: 2px;
+}
+
+.toprow {
+    height: 20%;
+    vertical-align: center;
+}
+
+.botrow {
+    height: 80%;
+    vertical-align: top;
+}
+
+.lname {
+    margin-left: 75px;
+}
+
+.indent {
+    margin-left: 40px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+    ALEXANDER TRUONG -- StudentGrades.html
+    
+    This HTML file of the MVC framework is the view of the application. This is the
+    presentation to the user and any interactions with events on the view will only
+    invoke the functions located in the controller. The controller is responsible for
+    fetching the model's information to display to the view; hence the view and
+    the model do not ever communicate directly.
+-->
+<head>
+    <meta charset='UTF-8'>
+    <title>Student Database</title>
+    <link rel="stylesheet" type="text/css" href="StudentGrades.css">
+    <script src="StudentModel.js" type="text/javascript" async></script>
+    <script src="StudentController.js" type="text/javascript" async></script>
+</head>
+
+<body>
+    <table class="formTable">
+        <tr class="toprow">
+            <td colspan="2">
+                <span class="lname">Last Name:</span>
+                <input type="text" id="textbox" value="" size="30">
+                <button id="searchBtn">Search</button>
+            </td>
+        </tr>
+        <tr class="botrow">
+            <td id="studentCell">
+                <p><strong>Students:  </strong><span id="notFound"></span></p>
+            </td>
+            <td id="tableCell">
+                <p><strong>Grades for <span id="studentName"></span>:</strong></p>
+            </td>
+        </tr>
+    </table>
+</body>

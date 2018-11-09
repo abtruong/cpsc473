@@ -20,4 +20,5 @@ Project 2 provides a much simpler HTML page, but with dynamic JavaScript element
 * Nguyen
 * Ortiz
 * Sanchez
+
 If the search is not any of these specified last names, it will display a small message on the HTML page notifying the user there were no matches to the user's specified name.
